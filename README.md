@@ -10,5 +10,5 @@ Student Email : sahil-deep-singh@myseneca.ca
 Course/Section: ZBB
 
 ## Project URLs
-GitHub Repo   : https://github.com/sahil-deep-singh/web322--sahil-deep-singh-/edit/main/README.md
+GitHub Repo   : https://github.com/sahil-deep-singh/Web322--Assignment6--Sahil-Deep-Singh.git
 Cyclic URL    : https://smiling-spacesuit-cow.cyclic.app/
