@@ -11,4 +11,4 @@ Course/Section: ZBB
 
 ## Project URLs
 GitHub Repo   : https://github.com/sahil-deep-singh/Web322--Assignment6--Sahil-Deep-Singh.git
-Cyclic URL    : https://smiling-spacesuit-cow.cyclic.app/
+Cyclic URL    : https://peach-crane-belt.cyclic.app/
