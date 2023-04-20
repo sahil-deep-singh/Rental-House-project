@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome!</title>
+    <style>
+
+        h1 {
+            font-size: 36px;
+            margin-top: 50px;
+            text-align: center;
+            
+        }
+
+        p {
+            font-size: 24px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .success {
+            color:rgb(87, 181, 218);
+            font-size: 50px;
+            margin: 50px 0;
+            text-align: center;
+           
+        }
+
+        /* Center the content on the page */
+        center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+</html>
+
+    <div class="container">
+        <h1>Welcome {{fname}} {{lname}}!</h1>
+        <p>Your account has been successfully created.</p>
+        <p class="success">We have also sent you an email with further details.</p>
+    </div>
+

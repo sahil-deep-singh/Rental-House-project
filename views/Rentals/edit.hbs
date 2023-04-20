@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Rental</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="greeting">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Edit Rental</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="/rentals/edit/{{rental._id}}" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="headline">Headline</label>
+                                <input type="text" class="form-control" id="headline" name="headline"
+                                    value="{{rental.headline}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="numSleeps">Number of Sleeps</label>
+                                <input type="number" class="form-control" id="numSleeps" name="numSleeps"
+                                    value="{{rental.numSleeps}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="numBedrooms">Number of Bedrooms</label>
+                                <input type="number" class="form-control" id="numBedrooms" name="numBedrooms"
+                                    value="{{rental.numBedrooms}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="numBathrooms">Number of Bathrooms</label>
+                                <input type="number" class="form-control" id="numBathrooms" name="numBathrooms"
+                                    value="{{rental.numBathrooms}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="pricePerNight">Price Per Night</label>
+                                <input type="number" class="form-control" id="pricePerNight" name="pricePerNight"
+                                    value="{{rental.pricePerNight}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" id="city" name="city" value="{{rental.city}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="province">Province</label>
+                                <input type="text" class="form-control" id="province" name="province"
+                                    value="{{rental.province}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="image">Upload Image:</label>
+                                <input type="file" class="form-control-file" id="image" name="image">
+                            </div>
+
+                            <button type="submit" class="btn button_gr">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

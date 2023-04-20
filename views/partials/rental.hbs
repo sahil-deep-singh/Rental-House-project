@@ -1,0 +1,23 @@
+<div class="rentals">
+  {{#each rentals}}
+  {{#if this.featuredRental}}
+  <div class="ren_value">
+    <div class="ren_img">
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="{{this.imageUrl}}" width="300px" height="280px">
+    </div>
+    <b>
+      <h3>&emsp;&emsp;&emsp;&emsp;&emsp;{{this.headline}}</h3>
+    </b>
+    <p>
+      &emsp;&emsp;&emsp;&emsp;&ensp;Sleeps{{this.numsleeps}}.{{this.numBedrooms}}BR.{{this.numBathrooms}}BA&emsp;<b>C${{this.pricePerNight}}</b>avg/night
+    </p>
+<p>{{#ifEqual @root.role "customer"}}
+    <form method="post" action="/cart" style="text-align: center;">
+      <input type="hidden" name="rentalId" value="{{this._id}}">
+      <button type="submit" class="btn btn-primary button_gr">Rent</button>
+    </form>
+    {{/ifEqual}}</p><br><br>
+  </div>
+  {{/if}}
+  {{/each}}
+</div>

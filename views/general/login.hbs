@@ -1,0 +1,28 @@
+<center>
+  <div class="login">
+    <h1 style="font-size:42px;">Welcome Back</h1><br>
+    <form action="/login" method="POST">
+      <input type="email" id="email" name="email" placeholder="Email Address"{{#if emailInvalid}} class="invalid"{{/if}} value="{{emailValue}}"><br><br>
+      {{#if emailInvalid}}
+        <p style="color:red;">{{emailInvalid}}</p>
+      {{/if}}
+      <input type="password" id="password" name="password" placeholder="Password"{{#if passwordInvalid}} class="invalid"{{/if}} value="{{passwordValue}}"><br><br>
+      {{#if passwordInvalid}}
+        <p style="color:red;">{{passwordInvalid}}</p>
+      {{/if}}
+ <div class="role-select">
+  <input type="radio" id="role-data-entry-clerk" name="role" value="dataentryclerk" checked>
+  <label for="role-data-entry-clerk">Data Entry Clerk</label>
+  <input type="radio" id="role-customer" name="role" value="customer">
+  <label for="role-customer">Customer</label>
+</div>
+
+
+      <br><br>
+      <input id="submit" type="submit" value="Log in">
+    </form>
+    {{#if errorMessage}}
+      <p style="color:red;">{{errorMessage}}</p>
+    {{/if}}
+  </div>
+</center>

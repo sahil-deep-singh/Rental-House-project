@@ -1,0 +1,21 @@
+<div class="nav_bar">
+  <a id="n2" href="/"><img id="fig1" src="/photos/img1.png"></a>
+  <a id="n1" href="/"><h1>HOME</h1></a>
+  <a id="n1" href="/rentals"><h1>RENTALS</h1></a>
+
+  {{#if firstName}}
+    {{#if role}}
+      {{#ifEqual role "dataentryclerk"}}
+        <a id="n1" href="/Rentals/list"><h1>{{firstName}}</h1></a>
+      {{/ifEqual}}
+      {{#ifEqual role "customer"}}
+        <a id="n1" href="/cart"><h1>{{firstName}}</h1></a>
+      {{/ifEqual}}
+    {{/if}}
+
+    <a id="n1" href="{{logoutLink}}"><h1>Logout</h1></a>
+  {{else}}
+    <a id="n1" href="/registration"><h1>SIGN-UP</h1></a>
+    <a id="n1" href="/login"><h1>LOGIN</h1></a>
+  {{/if}}
+</div>

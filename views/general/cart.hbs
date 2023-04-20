@@ -1,0 +1,111 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<br>
+<div class="container greeting">
+  <h1 class="my-5">Shopping Cart</h1>
+  <div class="row">
+    <div class="col-md-8">
+      {{#if cart}}
+      {{#if cart.rentals.length}}
+      {{#each cart.rentals}}
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{{imageUrl}}" class="card-img" alt="{{headline}}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{headline}}</h5>
+              <p class="card-text">{{city}}, {{province}}</p>
+              <form action="/cart/update" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <input type="hidden" name="rentalId" value="{{rentalId}}">
+                <div class="form-group">
+                  <label for="nightsReserved">No of nights Reserved:</label>
+                  <input type="number" class="form-control" id="nightsReserved" name="nightsReserved"
+                    value="{{nightsReserved}}" min="1" max="14">
+                </div>
+                <p class="card-text">${{pricePerNight}} per night</p>
+                <p class="card-text">Total price: ${{multiply pricePerNight nightsReserved}}</p>
+                <button type="submit" class="btn btn-primary mr-2">Update</button>
+              <button type="button" class="btn btn-danger" onclick="showConfirmationModal()">Remove</button>
+              </form><br>
+              <!-- Remove confirmation modal -->
+              <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="removeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="removeModalLabel">Remove Item</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Are you sure you want to remove this item from your cart?</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <form action="/cart/remove" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="hidden" name="rentalId" value="{{rentalId}}">
+                        <button type="submit" class="btn btn-danger">Remove</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+      <hr>
+      <div class="text-right">
+        <p class="font-weight-bold">Subtotal: ${{cart.subtotal}}</p>
+        <p class="font-weight-bold">VAT: ${{cart.vat}}</p>
+        <p class="font-weight-bold">Grand Total: ${{cart.total}}</p>
+        <form action="/cart/checkout" method="POST">
+          <button type="submit" class="btn btn-primary">
+            Checkout
+          </button>
+        </form>
+      </div>
+      {{else}}
+      <p>Your cart is empty.</p>
+      {{/if}}
+      {{else}}
+      <p>Your cart is empty.</p>
+      {{/if}}
+    </div>
+    <div class="col-md-4">
+  {{#if cart.rentals.length}}
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Order Summary</h5>
+      {{#each cart.rentals}}
+      <p>{{headline}} ({{nightsReserved}} nights): ${{multiply pricePerNight nightsReserved}}</p>
+      {{/each}}
+      <hr>
+      <p class="font-weight-bold">Subtotal: ${{cart.subtotal}}</p>
+      <p class="font-weight-bold">VAT: ${{cart.vat}}</p>
+      <p class="font-weight-bold">Grand Total: ${{cart.total}}</p>
+    </div>
+  </div>
+  {{/if}}
+</div>
+
+
+  </div>
+</div>
+<br>
+
+
+<script>function showConfirmationModal() {$('#removeModal').modal('show');}</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNSMQUl" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

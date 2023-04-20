@@ -1,0 +1,38 @@
+<center>
+  <div class="signUp">
+    <h1 style="font-size:42px;">Sign-Up</h1>
+    <h2>Create your account by entering your email address and choosing your password.</h2>
+    <form method="POST" action="/registration">
+      <div>
+        <input type="text" id="firstname" name="fname" placeholder="First Name" value="{{formData.fname}}"><br><br>
+        {{#if errors.fname}}
+          <p style="color: red;">{{errors.fname}}</p>
+        {{/if}}
+      </div>
+      <div>
+        <input type="text" id="lastname" name="lname" placeholder="Last Name" value="{{formData.lname}}"><br><br>
+        {{#if errors.lname}}
+          <p style="color: red;">{{errors.lname}}</p>
+        {{/if}}
+      </div>
+      <div>
+        <input type="text" id="email" name="email" placeholder="Email Address" value="{{formData.email}}"><br><br>
+      {{#if errors.email}}
+          <p style="color: red;">{{errors.email}}</p>
+        {{else if errors.errorMessage}}
+          <p style="color: red;">{{errors.errorMessage}}</p>
+        {{/if}}
+      </div>
+      <div>
+        <input type="password" id="password" name="password" placeholder="Password"><br><br>
+        {{#if errors.password}}
+          <p style="color: red;">{{errors.password}}</p>
+        {{/if}}
+      </div>
+      <input id="submit" type="submit" value="Sign Up Today">
+    </form>
+    {{#if success}}
+      <p style="color: rgb(43, 119, 149);">Account created successfully! Welcome, {{success}}.</p>
+    {{/if}}
+  </div>
+</center>

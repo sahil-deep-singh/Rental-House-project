@@ -1,0 +1,31 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "Updating assignment 1, using handel-bars and other supportive methods(bootstrap) to make our website more functionable and responsive.",
+  "main": "server.js", "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "rentals",
+    "login",
+    "sign-up",
+    "home",
+    "navbar"
+  ],
+  "author": "Sahil Deep Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "mongoose": "^7.0.2",
+    "session": "^0.1.0"
+  }
+}

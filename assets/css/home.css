@@ -1,0 +1,696 @@
+body
+{
+    
+    background-image: -moz-radial-gradient(lightgray,lightblue, rgb(32, 155, 145));
+}
+.nav_bar
+{
+    width: 100%;
+    height: 130px;
+    background-color:teal ;
+    border: 5px dashed darkslategrey;
+    margin: 40px 0px 58px -5px;
+    display: flex;
+    
+}
+
+#fig1
+{
+    width: 240px;
+    height: 230px;
+    border-radius: 50%;
+    border: 4px solid darkblue;
+    margin-top: -45px;
+    margin-left: 20px;
+    
+}
+
+#n2
+{
+    width: 300px;
+    height: 130px;
+    margin-right: 200px;
+    margin-left: 40px;
+    float: left;
+}
+
+#n1
+{   
+    width: 240px;
+    height: 130px;
+    float: left; 
+
+}
+
+#n1 h1
+{
+    padding-top: 20px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    text-decoration: none;
+    float: left;
+    color: burlywood;
+    font-size: 35px;
+
+}
+
+
+#n1 h1:hover
+{
+    color:brown;
+}
+
+
+#hero
+{
+    width: 100%;
+    height: 500px;
+    margin: 0px 0px 0px 0px;
+    background-color: aliceblue;
+}
+
+.hero_img
+{
+    position: relative;
+    opacity: 1;
+    height: 100%;
+}
+.hero_text
+{
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    font-size: larger;
+    color:rgb(160, 62, 62);
+    background-image: -moz-radial-gradient(lightgray,lightblue, black);
+    border-radius: 30%;
+    border: ridge 3px lightblue;
+    
+}
+
+.con_sec
+{
+    width: 100%;
+    height: 300px;
+    border: 5px solid black; 
+    box-sizing: border-box;
+    display: flex;
+}
+
+.con_v
+{
+    width: 25%;
+    height: 100%;
+    background-color: lightcyan;
+    float: left;
+
+}
+.con_img
+{
+    width: 100%;
+    height: 40%;
+    
+}
+.con_v h2{
+ padding-top: 10px;
+padding-left: 20px;
+box-sizing: border-box;
+color:darkslategray;
+}
+
+.con_v p
+{
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: darkred;
+}
+
+.rentals
+{
+    width: 100%;
+    height: 720px;
+    margin: 5px 0px 0px 0px;
+    background-image: -moz-linear-gradient(steelblue,white,rgb(145, 198, 180));
+    
+}
+
+
+.ren_value
+{
+    width: 33.33%;
+    height: 50%;
+    float: left;
+    padding-top: 5px;
+    box-sizing: border-box;
+
+}
+.ren_value h3
+{
+    color: black;
+    font-weight:bolder;
+    
+}
+.ren_value p
+{
+    font-size: 20px;
+    color: grey;
+    line-height: 1px;
+    
+}
+.ren_value p b{
+    color: black;
+}
+.ren_img
+{
+    width: 100%;
+    height: 75%;
+}
+.ren_img img
+{
+    border-radius: 10%;
+}
+.role-select input[type="radio"] {
+    display: none;
+  }
+  
+  .role-select label {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .role-select label:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .role-select input[type="radio"]:checked + label {
+    background-color: teal;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .role-select input[type="radio"]:checked + label:hover {
+    background-color: rgb(4, 58, 58);
+    border-color: white;
+  }
+  .greeting {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .greeting h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .greeting p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .button_gr {
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button_gr:hover {
+    background-color: rgb(4, 68, 68);
+  }
+  
+@media screen and (max-width:600px){
+    
+}
+
+.footer
+{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    margin-top: -15px;
+    float: left;
+    display: flex;
+}
+.footer1
+{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+.footer1 h1
+{
+    color: aliceblue;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.footer1 li a
+{
+    text-decoration: none;
+    color: coral;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.footer1 li a:hover
+{
+color:white;
+}
+.footer p
+{
+    color: coral;
+    font-size: 26px;
+}
+#f1
+{
+    width: 240px;
+    height: 230px;
+    border-radius: 50%;
+    border: 4px solid darkblue;
+    margin-left: 120px;
+}
+.footer2{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+.footer12
+{
+    width: 100%;
+    height: 60%;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.footer13
+{
+
+    margin-top: 10px;
+    margin-left: 118px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.last
+{
+    width: 100%;
+    height: 0px;
+    margin-top: -24px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: darkcyan;
+}
+
+/*Css for sign up page*/
+.signUp{
+    background-color: rgb(215, 250, 248);
+    height:auto;
+    width:750px;
+    border:3px solid darkcyan;
+    margin-top:100px;
+    margin-bottom: 100px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+    color: rgb(3, 118, 118);
+  }
+  
+  #firstname{
+    height:70px;
+    width:450px;
+    font-size:33px;
+    border: 2px solid darkcyan;
+    
+  }
+  #lastname{
+    height:70px;
+    width:450px;
+    font-size:33px;
+    border: 2px solid darkcyan;
+  }
+  #email{
+    height:70px;
+    width:450px;
+    font-size:33px;
+    border: 2px solid darkcyan;
+  }
+  #password{
+    height:70px;
+    width:450px;
+    font-size:33px;
+    border: 2px solid darkcyan;
+  }
+  
+  #submit{
+    height:70px;
+    width:450px;
+    font-size:33px;
+    color: darkcyan;
+    border: 5px solid darkcyan;
+    background-color: rgb(220, 244, 252);
+  }
+
+  @media screen and (max-width: 836px) {
+    .signUp{
+        width: 550px;
+        height: auto;
+        padding-bottom: 5%;
+        box-sizing: border-box;
+    }
+
+    .nav_bar{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    #n1{
+        margin-left: 31%;
+        height: 70px;
+        border-top: 5px groove darkslategrey  ;
+    }
+    
+    #n1 h1{
+        width: 100%;
+        margin: 0px;
+    }
+    #n2{
+        width: 100%;
+        margin-bottom: 112px;
+        box-sizing: border-box;
+    }
+
+    #fig1{
+        margin: 0px;
+        margin-right: 17%;
+    }
+  }
+
+  /*Login page CSS*/
+  .login{
+    background-color:  rgb(215, 250, 248);
+    width:500px;
+    height:auto;
+    border:3px solid darkcyan;
+    margin-top:100px;
+    margin-bottom:100px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+    color: rgb(2, 99, 99);
+  }
+
+/**css for rentals.hbs**/
+.rentals2
+{
+    width: 100%;
+    height: auto;
+    margin: 5px 0px 15px 0px; 
+   float: left;
+    background-color: rgb(96, 184, 184);
+    border: 5px dashed rgb(3, 110, 110);
+    box-sizing: border-box;
+}
+
+.ren_value2
+{
+    width: 40%;
+    height:50% ;
+    float: left;
+    padding-left: 10%;
+    padding-top: 15px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+.ren_value2 h3
+{
+    
+    color: black;
+    font-weight:bolder;
+}
+.ren_value2 p
+{
+    font-size: 20px;
+    color: grey;
+    line-height: 1px;
+    
+}
+.ren_value2 p b{
+    color: black;
+}
+.ren_img2
+{
+    width: 100%;
+    height: 75%;
+}
+.ren_img2 img
+{
+    border-radius: 10%;
+}
+  /*media query HOME PAGE*/
+  @media screen and (max-width: 600px){
+    .ren_value2 p
+    {
+        padding-left: 6%;
+        box-sizing: border-box;
+    }
+
+    .ren_value2 p
+    {
+        margin: 0%;
+        text-align: justify;
+    }
+}
+
+  @media screen and (max-width: 800px){
+    .ren_value2{
+        height: auto;
+       width: 100%;
+    }
+    .ren_value2 p
+{
+    margin: 0%;
+    text-align: justify;
+}
+    
+    /*media query for navbar*/
+     .nav_bar{
+         height: auto;
+         flex-direction: column;
+         text-align: center;
+         width: 100%;
+         margin: 0%;
+         box-sizing: border-box;
+     }
+     #n1{
+         margin-left: 27%;
+         height: 70px;
+         border-top: 5px groove darkslategrey  ;
+     }
+     
+     #n1 h1{
+         width: 100%;
+         margin: 0px;
+     }
+     #n2{
+         width: 100%;
+         margin-bottom: 112px;
+         box-sizing: border-box;
+     }
+ 
+     #fig1{
+         margin: 0px;
+         margin-right: 17%;
+     }
+        /*media query for hero*/
+     .hero_text{
+        width: 80%;
+        text-align: center;
+        font-size: 15px;
+        right: 15%;
+    }
+ 
+        /*media query for content*/
+        .con_sec{
+            flex-direction: column;
+            height: auto;
+        }
+        .con_v
+        {
+            width: 100%;
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+        }
+        .con_img{
+            padding-left: 35%;
+            box-sizing: border-box;
+        }
+        .con_v h2,p{
+           
+            text-align: center;
+        }
+
+       
+ }
+ 
+ @media screen and (max-width:1249px) {
+   /*NAVBAR FONT*/
+ 
+   #n1 h1{
+    width: 100%;
+   font-size: 25px;
+   top: 20%;
+   box-sizing: border-box;
+}
+    .rentals{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .ren_value{
+        width: 50%;
+        
+    }
+   .ren_value h3{
+    text-align:justify;
+   }
+   .ren_value p{
+    text-align:justify;
+   }
+   
+   #n1{
+    overflow:hidden;
+   }
+     /*footer*/
+     .footer{
+        overflow: hidden;
+        margin: 0%;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+       
+       }
+       .footer1{
+        width: 100%;
+        text-align: justify;
+        float: left;
+        font-size: 15px;
+        
+       }
+       .footer1 li {
+        float: left;
+        margin-left: 10px;
+        padding: 0%;
+        box-sizing: border-box;
+        border-left: 3px solid white;
+        border-top: 3px solid white;
+       }
+
+       .footer1 p{
+        padding-left: 4%;
+        padding-right: 5%;
+        box-sizing: border-box;
+       }
+      .footer2 {
+        margin-left: -08%;
+        width: 100%;
+        float: right;
+        text-align: center;
+        line-height: 1.5px;
+        padding-bottom: 3%;
+        box-sizing: border-box;
+      }
+      .footer2 img{
+        width: 40px;
+        height: 40px;
+      }
+      .footer2 h3{
+        padding-right: 4%;
+        box-sizing: border-box;
+      }
+
+      #f1{
+        width: 200px;
+        height: 200px;
+      }
+      .hero_text{
+        width: 50%;
+        text-align: center;
+        font-size: 15px;
+        left: 20%;}
+   }
+
+   @media screen and (max-width:1300px){
+    .hero_text{
+        width: 60%;
+        text-align: center;
+        font-size: 15px;
+        left: 20%;}
+
+   }
+
+       /*rentals*/
+   @media screen and (max-width:836px) {
+    .rentals{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .ren_value{
+        width: 100%;
+        
+    }
+   .ren_value h3{
+    text-align:justify;
+   }
+   .ren_value p{
+    text-align:justify;
+   }
+
+   
+}
+       /*rentals*/
+   @media screen and (max-width:813px) {
+    .rentals{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .ren_value{
+        width: 100%;
+        padding-left: 10%;
+        box-sizing: border-box;
+    }
+   .ren_value h3{
+    text-align:justify;
+   }
+   .ren_value p{
+    text-align:justify;
+   }
+
+   #f1{
+    width: 150px;
+    height: 150px;
+  }
+   }
+
+   /*MEDIA QUERY HOME PAGE ENDS*/
+
+  

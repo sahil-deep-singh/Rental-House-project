@@ -1,0 +1,27 @@
+{{#each groupedRentals}}
+<br>
+<h1>{{@key}}</h1>
+<div class="rentals2">
+  {{#each this}}
+
+  <div class="ren_value2">
+    
+    <div class="ren_img2">
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="{{imageUrl}}" width="300px" height="280px">
+    </div>
+    <b>
+      <h3>&emsp;&emsp;&emsp;&emsp;&emsp;{{headline}}</h3>
+    </b>
+    <p>
+      &emsp;&emsp;&emsp;&emsp;&ensp;Sleeps{{this.numSleeps}}.{{this.numBedrooms}}BR.{{numBathrooms}}BA&emsp;<b>C${{pricePerNight}}</b>avg/night
+    </p>
+    <p>{{#ifEqual @root.role "customer"}}
+    <form method="post" action="/cart" style="text-align: center;">
+      <input type="hidden" name="rentalId" value="{{this._id}}">
+      <button type="submit" class="btn btn-primary button_gr">Rent</button>
+    </form>
+    {{/ifEqual}}</p>
+  </div>
+  {{/each}}
+</div>
+{{/each}}
